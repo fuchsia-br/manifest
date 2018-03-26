@@ -4,7 +4,7 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
-    <project name "infra/infra"
+    <project name="infra/infra"
              path="infra/go/src/fuchsia.googlesource.com/infra/infra"
              remote="https://fuchsia.googlesource.com/infra/infra"
              gerrithost="https://fuchsia-review.googlesource.com"/>
