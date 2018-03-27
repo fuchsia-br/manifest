@@ -11,6 +11,6 @@
     <project name="dart/sdk"
              remote="https://dart.googlesource.com/sdk"
              gerrithost="https://dart-review.googlesource.com"
-             path="third_party/dart"/>
+             path="dart/sdk"/>
   </projects>
 </manifest>
