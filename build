@@ -27,12 +27,10 @@
     <project name="third_party/pyyaml"
              path="third_party/pyyaml"
              remote="https://fuchsia.googlesource.com/third_party/pyyaml"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/pytoml"
              path="third_party/pytoml"
              remote="https://fuchsia.googlesource.com/third_party/pytoml"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             gerrithost="https://fuchsia-review.googlesource.com"/>
   </projects>
 </manifest>
