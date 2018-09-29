@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <imports>
-    <localimport file="minimal"/>
-  </imports>
   <projects>
-    <project name="infra/infra"
-             path="infra/go/src/fuchsia.googlesource.com/infra/infra"
+    <!-- Name things <gerrit-host-prefix>-infra so that this can be imported
+         into other manifests that pull in infra repos from multiple hosts. -->
+    <project name="fuchsia-infra/legacy-infra"
+             path="fuchsia-infra/legacy-infra"
+             remote="https://fuchsia.googlesource.com/infra"
+             gerrithost="https://fuchsia-review.googlesource.com"/>
+    <project name="fuchsia-infra/infra"
+             path="fuchsia-infra/go/src/fuchsia.googlesource.com/infra/infra"
              remote="https://fuchsia.googlesource.com/infra/infra"
              gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="infra/config"
-             path="infra/config"
+    <project name="fuchsia-infra/config"
+             path="fuchsia-infra/config"
              remote="https://fuchsia.googlesource.com/infra/config"
              gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="infra/prebuilt"
-             path="infra/prebuilt"
+    <project name="fuchsia-infra/prebuilt"
+             path="fuchsia-infra/prebuilt"
              remote="https://fuchsia.googlesource.com/infra/prebuilt"
              gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="infra/recipes"
-             path="infra/recipes"
+    <project name="fuchsia-infra/recipes"
+             path="fuchsia-infra/recipes"
              remote="https://fuchsia.googlesource.com/infra/recipes"
              gerrithost="https://fuchsia-review.googlesource.com"/>
   </projects>
   <hooks>
     <hook name="update-prebuilt"
-          project="infra/prebuilt"
+          project="fuchsia-infra/prebuilt"
           action="update.sh"/>
   </hooks>
 </manifest>
