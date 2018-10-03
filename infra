@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
   <projects>
     <!-- Name things <gerrit-host-prefix>-infra so that this can be imported
          into other manifests that pull in infra repos from multiple hosts. -->
