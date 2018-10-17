@@ -17,7 +17,8 @@
     <project name="fuchsia-infra/config"
              path="fuchsia-infra/config"
              remote="https://fuchsia.googlesource.com/infra/config"
-             gerrithost="https://fuchsia-review.googlesource.com"/>
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/infra-git-hooks"/>
     <project name="fuchsia-infra/prebuilt"
              path="fuchsia-infra/prebuilt"
              remote="https://fuchsia.googlesource.com/infra/prebuilt"
