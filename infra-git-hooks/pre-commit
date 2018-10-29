@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -o errexit
 set -o pipefail
-set -o xtrace
 
 # Updates generated configs if source configs have been modified.
 
